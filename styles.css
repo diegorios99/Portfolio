@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f9;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.dark-mode {
+    background: #1c1c1c;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-content h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+.header-content p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #e74c3c;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+h2.dark-mode {
+    color: #e74c3c;
+}
+
+.project {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project.dark-mode {
+    background: #1e1e1e;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer.dark-mode {
+    background: #1c1c1c;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #c0392b;
+}
+
+a.dark-mode {
+    color: #f4f4f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.toggle-button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.toggle-button:hover {
+    background: #c0392b;
+}
+
+.toggle-button.dark-mode {
+    background: #f4f4f9;
+    color: #2c3e50;
+}
+
+.toggle-button.dark-mode:hover {
+    background: #d4d4d4;
+}
